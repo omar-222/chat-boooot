@@ -1,0 +1,1225 @@
+<html>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>User Page</title>
+
+      <style>
+
+      *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: linear-gradient(328deg, rgba(29, 29, 29, 0.05) 0%, rgba(29, 29, 29, 0.05) 25%, rgba(226, 226, 226, 0.05) 25%, rgba(226, 226, 226, 0.05) 50%, rgba(21, 21, 21, 0.05) 50%, rgba(21, 21, 21, 0.05) 75%, rgba(216, 216, 216, 0.05) 75%, rgba(216, 216, 216, 0.05) 100%), linear-gradient(172deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 25%, rgba(108, 108, 108, 0.05) 25%, rgba(108, 108, 108, 0.05) 50%, rgba(21, 21, 21, 0.05) 50%, rgba(21, 21, 21, 0.05) 75%, rgba(236, 236, 236, 0.05) 75%, rgba(236, 236, 236, 0.05) 100%), linear-gradient(207deg, rgba(153, 153, 153, 0.05) 0%, rgba(153, 153, 153, 0.05) 25%, rgba(83, 83, 83, 0.05) 25%, rgba(83, 83, 83, 0.05) 50%, rgba(5, 5, 5, 0.05) 50%, rgba(5, 5, 5, 0.05) 75%, rgba(82, 82, 82, 0.05) 75%, rgba(82, 82, 82, 0.05) 100%), linear-gradient(297deg, rgba(26, 26, 26, 0.05) 0%, rgba(26, 26, 26, 0.05) 25%, rgba(223, 223, 223, 0.05) 25%, rgba(223, 223, 223, 0.05) 50%, rgba(232, 232, 232, 0.05) 50%, rgba(232, 232, 232, 0.05) 75%, rgba(153, 153, 153, 0.05) 75%, rgba(153, 153, 153, 0.05) 100%), linear-gradient(204deg, rgba(120, 120, 120, 0.05) 0%, rgba(120, 120, 120, 0.05) 25%, rgba(191, 191, 191, 0.05) 25%, rgba(191, 191, 191, 0.05) 50%, rgba(246, 246, 246, 0.05) 50%, rgba(246, 246, 246, 0.05) 75%, rgba(123, 123, 123, 0.05) 75%, rgba(123, 123, 123, 0.05) 100%), linear-gradient(90deg, rgb(4, 16, 87), rgb(21, 69, 155)) !important;
+      font-family: cairo;
+      color: white;
+      font-size: 18px;
+    }
+        textarea, button { padding: 10px; margin: 10px 0; font-size: 16px; width: 100%; }
+        button { background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+        img { max-width: 100%; height: auto; margin-top: 20px; }
+
+
+        #downloadBtn {
+          padding: 5px 15px;
+          font-weight: bold;
+          margin: 10px 0px;
+          font-size: 16px;
+          background: red;
+          color: #fff;
+          font-family: cairo;
+          border: none;
+          border-radius: 15px;
+          cursor: pointer;
+
+          background-image: repeating-linear-gradient(90deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(0deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(0deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 20px), repeating-linear-gradient(90deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 20px), linear-gradient(90deg, hsl(208, 100%, 22%), hsl(208, 100%, 22%)) !important;
+          border: 2px solid whitesmoke;
+          color: white !important;
+          border-radius: 15px !important;
+        }
+
+        .tools button{
+        max-width: 300px;
+        }
+
+        .WhatsAppSender{
+          padding: 5px 15px;
+          font-weight: bold;
+          font-size: 16px;
+          background: red;
+          color: #fff;
+          font-family: cairo;
+          border: none;
+          border-radius: 15px;
+          cursor: pointer;
+          background-image: repeating-linear-gradient(90deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(0deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(0deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 20px), repeating-linear-gradient(90deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 20px), linear-gradient(90deg, hsl(208, 100%, 22%), hsl(208, 100%, 22%)) !important;
+          border: 2px solid whitesmoke;
+          color: white !important;
+          border-radius: 15px !important;
+
+        }
+
+
+        .logout-btn{
+          padding: 5px 15px;
+          font-weight: bold;
+          font-size: 16px;
+          color: #fff;
+          font-family: cairo;
+          border: none;
+          border-radius: 15px;
+          cursor: pointer;
+          background: black;
+          border: 2px solid whitesmoke;
+          color: white !important;
+          border-radius: 15px !important;
+
+        }
+
+        .dadOFPage{
+        
+          width: 95%;
+          margin: auto;
+          max-width: 1200px;
+        
+        }
+
+
+
+        .mainRules{
+          background-image: repeating-linear-gradient(0deg, rgba(221, 219, 219, 0.2) 0px, rgba(221, 219, 219, 0.2) 1px, transparent 1px, transparent 41px), repeating-linear-gradient(90deg, rgba(221, 219, 219, 0.2) 0px, rgba(221, 219, 219, 0.2) 1px, transparent 1px, transparent 41px), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+          font-size: 20px;
+          max-height: 500px;
+          font-family: cairo;
+          padding: 10px;
+          width: 100%;
+          /* max-width: 800px; */
+          height: 500px;
+          border-radius: 10px;   
+          margin: 0;       
+        }
+
+
+
+        .saveRulesBtn{
+          padding: 5px 15px;
+          font-weight: bold;
+          margin: 10px auto 20px;
+          font-size: 16px;
+          background: green;
+          font-family: cairo;
+          cursor: pointer;
+          background-image: repeating-linear-gradient(90deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(0deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(0deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 20px), repeating-linear-gradient(90deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 20px), linear-gradient(90deg, hsl(208, 100%, 22%), hsl(208, 100%, 22%)) !important;
+          border: 2px solid whitesmoke;
+          color: white !important;
+          border-radius: 15px !important;
+          max-width: 200px;
+          margin: 12px auto;
+          display: block;
+        }
+
+        div:where(.swal2-container) .swal2-input {
+          height: auto;
+          padding: 10px 10px;
+          margin: 5px;
+        }
+
+
+
+        .mainMessage{
+          width: 95%;
+          margin: 5px auto 20px;
+          padding: 17px;
+          min-height: 200px;
+          border-radius: 15px;
+          font-size: 20px;
+        }
+
+
+
+    #stopBtn,
+    #startBtn{
+      padding: 5px 15px;
+      font-weight: bold;
+      font-size: 16px;
+      background: red;
+      color: #fff;
+      font-family: cairo;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      background-image: repeating-linear-gradient(90deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(0deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(0deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 20px), repeating-linear-gradient(90deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 20px), linear-gradient(90deg, hsl(208, 100%, 22%), hsl(208, 100%, 22%)) !important;
+      border: 2px solid whitesmoke;
+      color: white !important;
+      border-radius: 15px !important;
+    }
+
+    .setHoursButton{
+      padding: 5px 15px;
+      font-weight: bold; 
+      font-size: 16px; 
+      background: red; 
+      color: #fff; 
+      font-family: cairo; 
+      border: none; 
+      border-radius: 15px; 
+      cursor: pointer; 
+      background-image:  repeating-linear-gradient(90deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(0deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(0deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 20px), repeating-linear-gradient(90deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 20px), linear-gradient(90deg, hsl(208, 100%, 22%), hsl(208, 100%, 22%)) !important;
+      border: 2px solid whitesmoke; 
+      color: white !important; 
+      border-radius: 15px !important;       
+    }
+
+
+    #startHourampm, #endHourampm, #startHour, #endHour{
+      padding: 10px;
+      font-size: 20px;
+      border-radius: 10px;
+    }
+    
+    .passwordInput{
+      width: 80%;
+      margin: auto !important;
+      border: 2px solid #0000003b;
+      border-radius: 10px;
+    }
+
+
+    .phoneNumbersTable td, .phoneNumbersTable tr{
+      padding: 10px;
+      border: 1px solid black !important;
+      color: black !important;
+    }
+
+  
+
+    @media (max-width: 600px) {
+      .btnsDiv{
+        display: block !important;
+      }
+    }
+
+
+
+      </style>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+
+      <div class="dadOFPage">
+
+
+
+        <div class="qrDiv" style="display: none;">
+
+          <button class="startScanQrBtn" onclick="startScanQr()" style=" width: 200px; display: block; margin: 20px auto; border-radius: 10px;">Start Scan Qr</button>
+          
+          <div class="scanUserQrDiv" style="display: none; max-width: 350px; margin: auto;">
+             <h2>Please wait to scan QR code</h2>
+              <img class="qrCodeImg" style=" border-radius: 20px; border: none; width: 300px; height: 300px;" src="./loading.jpg" alt="QR Code" />
+  
+             <br>
+             <h2>Please Restart Page After Scan The Qr Code With Your Phone</h2>
+          </div>
+        </div>
+      
+      
+      
+        <div class="mainUserDiv" style="display: none;">
+
+          <div class="tools">
+              <div class="btnsDiv" style="display: flex; justify-content: space-around;">
+                
+                <button class="logout-btn" onclick="logoutUser()">Logout and Change Phone Number</button>
+                
+                <button id="downloadBtn" onclick="downloadPhoneNumbers()">Download Phone Numbers</button>
+                <button class="WhatsAppSender" onclick="startWhatsAppSender()">WhatsApp Sender</button>   
+              </div>
+  
+              <div style="display: flex; justify-content: center;">
+                <button id="startBtn" onclick="toggleChatbot(true)" style="margin: 10px; ">Start Chatbot</button>
+                <button id="stopBtn" onclick="toggleChatbot(false)" style="margin: 10px; display: none;">Stop Chatbot</button>
+                <button class="setHoursButton" onclick="setChatbotHours()" style="margin: 10px;"> Set Bot Hours </button>
+              </div>
+  
+  
+          </div>
+  
+          <h1 style="text-align: center;">Set AI Rules</h1>
+     
+          <div style="max-width: 1000px; margin: auto; border-radius: 20px; overflow: hidden;">
+            <textarea dir="auto" class="mainRules" name="rules" rows="15" placeholder="Enter rules for the chatbot..."></textarea>
+          </div>
+          <button class="saveRulesBtn" onclick="saveRules()">Save Rules</button>
+     
+                  
+                  
+        </div>
+                
+      
+
+        
+
+      </div>
+    </body>
+    <script>
+
+      // get user data
+
+
+      
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const userId = urlParams.get('userId');
+      let userData = {};
+      let mainToken="";
+
+      let startHour = 12||12;  
+      let startHourampm = "AM";
+      let endHour = 11||11;  
+      let endHourampm = "PM"; 
+
+      // Fetch user existence
+      fetch(`/check-user/${userId}`)
+        .then(response => response.json())
+        .then(async (data) => {
+          if (data.success) {
+            let userPassword = localStorage.getItem(`whatsapp_chatbot_user_${userId}_password`);
+
+            if (userPassword) {
+              // If password is stored locally, validate it
+              await getUserData(userId, userPassword);
+            } else {
+              // Prompt user to enter password
+              Swal.fire({
+                title: `Hi ${userId}, Enter your password`,
+                input: 'text',
+                inputAttributes: {
+                  autocapitalize: 'off',
+                  placeholder: 'Enter Your Password',
+                },
+                showCancelButton: true,
+                confirmButtonText: 'Submit',
+                showLoaderOnConfirm: true,
+                allowOutsideClick: false,
+                preConfirm: async (password) => {
+                  if (!password) {
+                    Swal.showValidationMessage('Password is required');
+                    return false;
+                  }
+                  // Validate entered password
+                  const result = await validatePassword(userId, password);
+                  if (result.isValid) {
+                    userData = result.data;
+                    localStorage.setItem(`whatsapp_chatbot_user_${userId}_password`, password);
+                    // showUserData(userData);
+                    location.reload();
+                    Swal.close();
+                  } else {
+                    Swal.showValidationMessage('Invalid password');
+                    return false;
+                  }
+                },
+                didOpen: () => {
+                  const inputElement = Swal.getInput();
+                  if (inputElement) {
+                    inputElement.classList.add('passwordInput');
+                  }
+                },
+              });
+            }
+          } else {
+            // User not found
+            Swal.fire({
+              icon: 'error',
+              title: 'User not found!',
+              text: '',
+            });
+          }
+        })
+        .catch(error => console.error('Error checking user:', error));
+
+      // Function to fetch user data
+      async function getUserData(userId, userPassword) {
+        try {
+          const response = await fetch(`/user-data`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ userId, password: userPassword }),
+          });
+
+          const data = await response.json();
+          userData = data.data;
+
+          if (userData) {
+            mainToken = userData.token || mainToken;
+
+            console.log("start checkToken")
+            let resultToken=await checkToken(userData,userData.token);
+            console.log("Token Result:",resultToken)
+
+            if (resultToken.isValid) {
+              showUserData(userData);
+
+              let divOfTokenStartAndEndDate = `
+              <div style="
+                  text-align: center;
+                  font-weight: bold;
+                  background: #eeeeee12;
+                  border-radius: 10px;
+                  padding: 15px;
+              ">
+                your subscription will end at ${resultToken.data.endDate} <a style="border-bottom: 2px solid white;  margin: 25px; cursor: pointer;" class="changeSubscriptionToken" onclick="changeSubscriptionToken()">Change Subscription Token</a>
+              <div>
+              `;
+
+              document.querySelector('.dadOFPage').innerHTML += divOfTokenStartAndEndDate;
+
+            } else {
+              enterToken(userData);
+            }
+
+
+
+
+
+
+          } else {
+
+            localStorage.removeItem(`whatsapp_chatbot_user_${userId}_password`);
+
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Invalid password!',
+            });
+
+          }
+        } catch (error) {
+          console.error('Error fetching user data:', error);
+        }
+      }
+
+      // Function to validate password
+      async function validatePassword(userId, password) {
+        try {
+          const response = await fetch(`/user-data`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ userId, password }),
+          });
+
+          const data = await response.json();
+          return { isValid: data.success, data }; // Return an object with isValid and data
+        } catch (error) {
+          console.error('Error validating password:', error);
+          return false;
+        }
+      }
+
+
+
+
+
+      // Function to show user data
+      async function showUserData(userData) {
+         
+        const qrDiv = document.querySelector('.qrDiv');
+        const mainUserDiv = document.querySelector('.mainUserDiv');
+
+        console.log('user data:', userData);
+        
+        // Check if user has token
+        if (userData.token) {
+          mainToken = userData.token;
+        }
+
+
+        if (userData.isLogin) {
+
+          qrDiv.style.display = 'none';
+          mainUserDiv.style.display = 'block';
+
+          // Check if user has rules
+          if (userData.rules!==undefined && userData.rules!==null && userData.rules!=="") {
+            const rulesTextarea = document.querySelector('.mainRules');
+            rulesTextarea.value = userData.rules;
+            rulesTextarea.textContent = userData.rules;
+          }
+
+          // Check if user has bot hours
+          if (userData.startHour !==null && userData.endHour !==null && userData.startHourampm !==null && userData.endHourampm !==null) {
+            startHour = userData.startHour;
+            startHourampm = userData.startHourampm;
+            endHour = userData.endHour;
+            endHourampm = userData.endHourampm;
+
+
+          }
+
+       
+
+ 
+          // Check if user has chatbot status
+          if (userData.isActive) {
+
+            const startBtn = document.getElementById("startBtn");
+            const stopBtn = document.getElementById("stopBtn");
+
+            if (userData.isActive) {
+              startBtn.style.display = "none";
+              stopBtn.style.display = "block";
+            } else {
+              startBtn.style.display = "block";
+              stopBtn.style.display = "none";
+            }
+
+
+           
+
+
+          }
+
+        } else {
+          qrDiv.style.display = 'block';
+          mainUserDiv.style.display = 'none';
+
+    
+
+
+        }
+
+      }
+
+      async function checkToken(userData, token) {
+
+        console.log("Checking Token")
+        const response = await fetch(`/get-token`, {
+          method: 'POST',
+          headers: {
+        'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ userId: userId, password: userData.password, token }),
+        });
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+
+          console.log(data.tokenData)
+          return { isValid: true, data: data.tokenData };
+        } else {
+
+          return { isValid: false, message: data.message };
+        }
+      }
+
+
+  
+      async function enterToken(userData){
+
+        Swal.fire({
+            title: 'ادخل كود الاشتراك',
+            input: 'text',
+            inputAttributes: {
+              autocapitalize: 'off',
+              placeholder: 'Enter Your Token',
+            },
+            showCancelButton: true,
+            confirmButtonText: 'Submit',
+            showLoaderOnConfirm: true,
+            allowOutsideClick: false,
+            preConfirm: async (token) => {
+              if (!token) {
+                Swal.showValidationMessage('Token is required');
+              return false;
+              }
+              // Validate entered token
+              const result = await checkToken(userData, token);
+              if (result) {
+
+                if (result.isValid) {
+                  userData.token = token;
+                  showUserData(userData);
+                  Swal.close();
+                } else {
+                  Swal.showValidationMessage(`${result.message}`);
+                }
+
+                
+                
+              } else {
+                console.log("Token is invalid")
+                Swal.showValidationMessage(`${result.message}`);
+              return false;
+              }
+            },
+        });
+
+
+      };
+
+
+      async function fetchQrCode(userId, password) {
+        try {
+          const response = await fetch(`/get-qr/${userId}?password=${password}&token=${mainToken}`);
+          const data = await response.json();
+
+          if (response.ok && data.success && data.qr) {
+        console.log("QR Code Retrieved:", data.qr);
+        return data.qr.qr; // Return the QR code
+          } else if (data.message) {
+        console.log("Message:", data.message);
+          }
+        } catch (error) {
+          console.error("Error fetching QR code:", error);
+          throw error; // Handle error
+        }
+      }
+
+
+
+
+      function downloadPhoneNumbers() {
+        fetch(`/download-user-phone-numbers/${userId}?password=${userData.password}&token=${mainToken}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        })
+          .then(response => {
+            if (response.ok) {
+              return response.blob();
+            } else {
+              throw new Error('Failed to download phone numbers');
+            }
+          })
+          .then(blob => {
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = `${userId}_phone_numbers.csv`;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+          })
+          .catch(error => {
+            console.error('Error downloading phone numbers:', error);
+            Swal.fire({
+              icon: 'error',
+              title: 'Error downloading phone numbers',
+              text: 'An unexpected error occurred.',
+            });
+          });
+      }
+
+      function toggleChatbot(state) {
+
+
+        Swal.fire({
+          title: 'Please Wait...',
+          allowOutsideClick: false,
+          didOpen: () => {
+            Swal.showLoading();
+          }
+        });
+
+        const startBtn = document.getElementById("startBtn");
+        const stopBtn = document.getElementById("stopBtn");
+
+        if (state) {
+          startBtn.style.display = "none";
+          stopBtn.style.display = "block";
+        } else {
+          startBtn.style.display = "block";
+          stopBtn.style.display = "none";
+        }
+
+        fetch(`/toggle-user-chatbot/${userId}?password=${userData.password}&token=${mainToken}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ isActive: state }),
+        })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Failed to toggle chatbot state');
+          }
+          return response.json();
+        })
+        .then(data => {
+          if (!data.success) {
+            throw new Error(data.message);
+          }
+          console.log(`Chatbot state updated: ${state ? "active" : "inactive"}`);
+        Swal.fire({
+          icon: 'success',
+          title: 'Chatbot state updated',
+          text: `Chatbot is now ${state ? "active" : "inactive"}`,
+        });
+        })
+        .catch(error => {
+          console.error('Error toggling chatbot state:', error);
+          Swal.fire({
+            icon: 'error',
+            title: 'Error toggling chatbot state',
+            text: 'An unexpected error occurred.',
+          });
+        });
+      }
+
+
+
+
+
+
+
+      async function saveRules() {
+
+
+
+        Swal.fire({
+          title: 'Please Wait...',
+          allowOutsideClick: false,
+          didOpen: () => {
+            Swal.showLoading();
+          }
+        });
+
+        const rulesTextarea = document.querySelector('.mainRules');
+        const rules = rulesTextarea.value;
+
+        try {
+          const response = await fetch(`/save-rule/${userId}?password=${userData.password}&token=${mainToken}`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ rules }),
+          });
+
+          const data = await response.json();
+
+          if (data.success) {
+            Swal.fire({
+              icon: 'success',
+              title: 'Rules saved successfully!',
+              text: '',
+            });
+          } else {
+            Swal.fire({
+              icon: 'error',
+              title: 'Error saving rules',
+              text: data.message,
+            });
+          }
+        } catch (error) {
+          console.error('Error saving rules:', error);
+          Swal.fire({
+            icon: 'error',
+            title: 'Error saving rules',
+            text: 'An unexpected error occurred.',
+          });
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+  
+      function setChatbotHours() {
+        Swal.fire({
+          title: 'Set Chatbot Active Hours',
+          html: `
+            <label for="startHour">Start Hour (1-12):</label>
+            <div style="display: flex; align-items: center; gap: 10px;  justify-content: center;">
+              <select id="startHour" required>
+                <!-- Default placeholder option -->
+                <option value="" disabled selected>Select Hour</option>
+                <!-- Dynamic selection -->
+                <option value="1" ${Number(startHour) == 1 ? 'selected' : ''}>1</option>
+                <option value="2" ${Number(startHour) == 2 ? 'selected' : ''}>2</option>
+                <option value="3" ${Number(startHour) == 3 ? 'selected' : ''}>3</option>
+                <option value="4" ${Number(startHour) == 4 ? 'selected' : ''}>4</option>
+                <option value="5" ${Number(startHour) == 5 ? 'selected' : ''}>5</option>
+                <option value="6" ${Number(startHour) == 6 ? 'selected' : ''}>6</option>
+                <option value="7" ${Number(startHour) == 7 ? 'selected' : ''}>7</option>
+                <option value="8" ${Number(startHour) == 8 ? 'selected' : ''}>8</option>
+                <option value="9" ${Number(startHour) == 9 ? 'selected' : ''}>9</option>
+                <option value="10" ${Number(startHour) == 10 ? 'selected' : ''}>10</option>
+                <option value="11" ${Number(startHour) == 11 ? 'selected' : ''}>11</option>
+                <option value="12" ${Number(startHour) == 12 ? 'selected' : ''}>12</option>
+              </select>
+  
+              <select id="startHourampm" required>
+                <!-- Check if startHourampm is dynamically set and use it as the default -->
+                <option value="" disabled selected>Select AM/PM</option>
+                <option value="AM" ${startHourampm === 'AM' ? 'selected' : ''}>AM</option>
+                <option value="PM" ${startHourampm === 'PM' ? 'selected' : ''}>PM</option>
+              </select>
+  
+            </div>
+            <br>
+  
+            <label for="endHour">End Hour (1-12):</label>
+            <div style="display: flex; align-items: center; gap: 10px; justify-content: center;">
+              <select id="endHour" required>
+                <!-- Default placeholder option -->
+                <option value="" disabled selected>Select Hour</option>
+                <!-- Dynamic selection -->
+                <option value="1" ${Number(endHour) == 1 ? 'selected' : ''}>1</option>
+                <option value="2" ${Number(endHour) == 2 ? 'selected' : ''}>2</option>
+                <option value="3" ${Number(endHour) == 3 ? 'selected' : ''}>3</option>
+                <option value="4" ${Number(endHour) == 4 ? 'selected' : ''}>4</option>
+                <option value="5" ${Number(endHour) == 5 ? 'selected' : ''}>5</option>
+                <option value="6" ${Number(endHour) == 6 ? 'selected' : ''}>6</option>
+                <option value="7" ${Number(endHour) == 7 ? 'selected' : ''}>7</option>
+                <option value="8" ${Number(endHour) == 8 ? 'selected' : ''}>8</option>
+                <option value="9" ${Number(endHour) == 9 ? 'selected' : ''}>9</option>
+                <option value="10" ${Number(endHour) == 10 ? 'selected' : ''}>10</option>
+                <option value="11" ${Number(endHour) == 11 ? 'selected' : ''}>11</option>
+                <option value="12" ${Number(endHour) == 12 ? 'selected' : ''}>12</option>
+              </select>
+  
+  
+              <select id="endHourampm" required>
+                <!-- Default placeholder option -->
+                <option value="" disabled selected>Select AM/PM</option>
+                <!-- Dynamic selection -->
+                <option value="AM" ${endHourampm === 'AM' ? 'selected' : ''}>AM</option>
+                <option value="PM" ${endHourampm === 'PM' ? 'selected' : ''}>PM</option>
+              </select>
+            </div>
+            <br>
+  
+          `,
+          focusConfirm: false,
+          preConfirm: () => {
+
+            
+            startHour = document.getElementById('startHour').value;
+            endHour = document.getElementById('endHour').value;
+  
+            startHourampm = document.getElementById('startHourampm').value;
+            endHourampm = document.getElementById('endHourampm').value;
+  
+            // Validate inputs
+            if (startHour < 1 || startHour > 12 || endHour < 1 || endHour > 12) {
+              Swal.showValidationMessage('Please enter valid hours');
+              return false;
+            }
+  
+            // Validate inputs
+            if (startHour == endHour && startHourampm == endHourampm) {
+              Swal.showValidationMessage('Please enter valid hours cannot be the same');
+              return false;
+            }
+
+
+
+            Swal.fire({
+              title: 'Please Wait...',
+              allowOutsideClick: false,
+              didOpen: () => {
+                Swal.showLoading();
+              }
+            });
+
+  
+            // Send the start and end hours to the server via fetch
+            fetch(`/set-user-chatbot-hours/${userId}?password=${userData.password}&token=${mainToken}`, {
+              method: 'POST',
+              headers: {
+              'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ startHour: parseInt(startHour), endHour: parseInt(endHour), startHourampm, endHourampm }),
+            })
+              .then((response) => response.json())
+              .then((data) => {
+              if (data.success) {
+                startHour = startHour;
+                endHour = endHour;
+                startHourampm = startHourampm;
+                endHourampm = endHourampm;
+        
+                // success swal here
+                Swal.fire({
+                title: `Hours Set Successfully From ${startHour} ${startHourampm} To ${endHour} ${endHourampm}`,
+                icon: 'success',
+                });
+        
+              } else {
+                Swal.fire('Error setting hours');
+              }
+              })
+              .catch((error) => {
+              Swal.fire('Error setting hours');
+              console.error('Error:', error);
+              });
+            }
+
+
+        });
+      }
+  
+  
+
+
+
+
+
+      async function startWhatsAppSender() {
+
+        Swal.fire({
+                title: 'WhatsApp Sender',
+                html: `
+      
+                <label for="message" style="width: 100%; display: block;">Message:</label>
+                <textarea class="mainMessage" id="message" class="swal2-input" required></textarea>
+                <br>
+                <label for="countryCode">Country Code:</label>
+                <input id="countryCode" class="swal2-input" type="text" value="20">
+                <br>
+                <br>
+                <label for="fileUpload" style=" background: green; padding: 5px 10px; border-radius: 10px; color: #fff; cursor: pointer;">Upload Excel File</label>
+                <input type="file" id="fileUpload" accept=".xlsx, .xls, .csv" style="margin-bottom: 20px; display: none;">
+                <br>
+                <br>
+                <label for="messageDelay">Message Delay (in seconds):</label>
+                <input id="messageDelay" class="swal2-input" type="number" value="2" required>
+                <br>
+                <label for="batchDelay">Batch Delay (in seconds):</label>
+                <input id="batchDelay" class="swal2-input" type="number" value="10" required>
+                <br>
+                <label for="messageCount">Messages Before Batch Delay:</label>
+                <input id="messageCount" class="swal2-input" type="number" value="10" required>
+                <br>
+                <input style="display:none; transform: scale(1.5); margin: 10px;" id="removeCountryCode" type="checkbox">
+                <label style="display:none;" for="removeCountryCode">Numbers Have Country Code?</label>
+      
+                
+                `,
+                showCancelButton: true,
+                confirmButtonText: 'Start Sending',
+                preConfirm: () => {
+                  startBulkMessaging();
+                }
+              });
+
+      } 
+
+
+        // Function to start sending messages
+        async function startBulkMessaging() {
+          let fileInput = document.querySelector("#fileUpload");
+          let file = fileInput.files[0];
+          let phoneNumbers = []; // Initialize phoneNumbers array
+
+          if (file && (file.name.endsWith('.xlsx') || file.name.endsWith('.xls') || file.name.endsWith('.csv'))) {
+            let reader = new FileReader();
+
+            reader.onload = async function (e) {
+              try {
+                let data = e.target.result;
+
+                if (file.name.endsWith('.csv')) {
+                  // Parse CSV file
+                  let rows = data.split('\n').map(row => row.split(',')[0].trim());
+                  phoneNumbers = rows.filter(num => num); // Filter out empty rows
+                } else {
+                  // Parse Excel file
+                  let workbook = XLSX.read(data, { type: 'binary' });
+                  let sheet = workbook.Sheets[workbook.SheetNames[0]]; // First sheet
+                  let rows = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+                  phoneNumbers = rows.map(row => row[0]?.toString().trim()).filter(num => num).map(num => `"${num}"`);; // Filter out invalid rows
+                }
+
+                console.log('Phone Numbers:', phoneNumbers);
+
+                if (phoneNumbers.length === 0) {
+                  Swal.fire('Error', 'No valid phone numbers found in the file.', 'error');
+                  return;
+                }
+
+                // Proceed with messaging
+                await processMessages(phoneNumbers);
+              } catch (error) {
+                console.error('Error processing file:', error);
+                Swal.fire('Error', 'Failed to process the file. Please ensure it is valid.', 'error');
+              }
+            };
+
+            if (file.name.endsWith('.csv')) {
+              reader.readAsText(file);
+            } else {
+              reader.readAsBinaryString(file);
+            }
+          } else {
+            Swal.fire('Error', 'Please upload a valid Excel or CSV file.', 'error');
+          }
+        }
+
+        let showCounterForMessages=true;
+
+        let divOfNumbersDone="";
+        async function processMessages(phoneNumbers) {
+          
+          let message = document.getElementById('message').value;
+          let countryCode = document.getElementById('countryCode').value;
+          // Get settings
+          let messageDelay = parseInt(document.getElementById('messageDelay').value) || 2;
+          let batchDelay = parseInt(document.getElementById('batchDelay').value) || 10;
+          let removeCountryCode = document.getElementById('removeCountryCode').checked;
+
+
+          for (let i = 0; i < phoneNumbers.length; i++) {
+            let phoneNumber = phoneNumbers[i];
+
+            // Remove country code if the option is selected
+            if (removeCountryCode) {
+              phoneNumber = removeCountryCodeFromNumber(phoneNumber);
+            }
+
+            // Send message via WhatsApp Web JS (assuming client is initialized)
+            
+            await sendMessage(phoneNumber,message,countryCode,phoneNumbers.length,i);
+            // Wait for the specified delay between messages
+            if (i < phoneNumbers.length - 1) {
+              await delay(messageDelay * 1000); // Delay in milliseconds
+            }
+    
+            // After a certain number of messages, add a batch delay
+            if ((i + 1) % batchDelay === 0) {
+              console.log(`Batch completed. Waiting for ${batchDelay} seconds...`);
+              await delay(batchDelay * 1000);
+            }
+            
+
+            // stop 
+            if(!showCounterForMessages){
+              break;
+            }
+
+          }
+
+          
+        }
+
+        // Utility function to delay execution
+        function delay(ms) {
+          return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        // Placeholder for removing country code
+        function removeCountryCodeFromNumber(phoneNumber) {
+          // Implement logic to remove country code
+          return phoneNumber.replace(/^\+\d{1,3}/, ''); // Example: Removes +123
+        }
+
+      
+
+        // Placeholder for sending messages
+        async function sendMessage(phoneNumber,message,countryCode,phoneNumbersLength,doneMessages) {
+
+
+
+          
+            // Send message using the /send-user-whatsapp-message endpoint
+            fetch(`/send-user-whatsapp-message/${userId}?password=${userData.password}&token=${mainToken}`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ phoneNumber, message: `${message}`, countryCode: `${countryCode}` }),
+            }).then(response => {
+            if (response.ok) {
+              console.log(`Message sent to ${phoneNumber}`);
+
+              divOfNumbersDone+=`
+              
+                <tr>
+                  <td>${countryCode}${phoneNumber}</td>
+                  <td>Done</td>
+                </tr>
+
+              `;
+              
+              // show swal has all numbers sended in taple and statues done and  message (numberMessagesDone/numberMessagesleft) and button to stop
+              if(showCounterForMessages){
+              Swal.fire({
+                title: 'Messages Status',
+                html: `
+                <table>
+                  <thead>
+                  <tr>
+                    <th>Phone Number</th>
+                    <th>Status</th>
+                  </tr>
+                  </thead>
+                  <tbody class="phoneNumbersTable">
+                    ${divOfNumbersDone}
+                     
+                  </tbody>
+                </table>
+                <p>${doneMessages+1}/${phoneNumbersLength}</p>
+                `,
+                showConfirmButton: true,
+                showCancelButton: false,
+                confirmButtonText: 'Stop And Cancel',
+                confirmButtonColor: 'red',
+                allowOutsideClick: false,
+              }).then((result) => {
+                if (result.isConfirmed) {
+                showCounterForMessages=false;
+                window.location.reload();
+                } 
+              });
+              }
+
+              console.log(`Sending message to ${phoneNumber}`);
+
+              if(phoneNumbersLength-1==doneMessages){
+              Swal.fire('Messages Sent Successfully', 'All messages have been sent successfully.', 'success');
+              }
+
+            } else {
+              console.error(`Error sending message to ${phoneNumber}`);
+            }
+            
+            })
+          
+
+      }
+
+
+
+
+
+
+
+
+      async function logoutUser() {
+        Swal.fire({
+          title: 'Are you sure you want to logout?',
+          showCancelButton: true,
+          confirmButtonText: 'Logout',
+          showLoaderOnConfirm: true,
+          preConfirm: async () => {
+        try {
+
+          Swal.fire({
+            title: 'Logging out...',
+            allowOutsideClick: false,
+            didOpen: () => {
+              Swal.showLoading();
+            }
+          });
+
+
+          const response = await fetch(`/logout-user/${userId}?password=${userData.password}&token=${mainToken}`, {
+            method: 'GET',
+            headers: {
+          'Content-Type': 'application/json',
+            },
+          });
+
+          const data = await response.json();
+
+          if (data.success) {
+            Swal.fire({
+          icon: 'success',
+          title: 'Logged out successfully',
+          text: data.message,
+            }).then(() => {
+      
+          window.location.reload();
+            });
+          } else {
+            Swal.fire({
+          icon: 'error',
+          title: 'Error logging out',
+          text: data.message,
+            });
+          }
+        } catch (error) {
+          console.error('Error logging out:', error);
+          Swal.fire({
+            icon: 'error',
+            title: 'Error logging out',
+            text: 'An unexpected error occurred.',
+          });
+        }
+          },
+        });
+      }
+
+
+
+      async function changeSubscriptionToken(){
+        enterToken(userData);
+      }
+
+
+
+
+
+      let qrInterval;
+
+      async function startScanQr() {
+        let qrDiv = document.querySelector('.qrDiv');
+        let startScanQrBtn = document.querySelector('.startScanQrBtn');
+        let scanUserQrDiv = document.querySelector('.scanUserQrDiv');
+        let qrCodeImg = document.querySelector('.qrCodeImg');
+
+        scanUserQrDiv.style.display = 'block';
+        startScanQrBtn.style.display = 'none';
+
+        if (qrInterval) {
+          clearInterval(qrInterval);
+        }
+
+        try {
+          let qrCode = await fetchQrCode(userId, userData.password);
+          qrCodeImg.src = qrCode;
+          console.log("qr updated");
+
+          qrInterval = setInterval(async () => {
+            let qrCode = await fetchQrCode(userId, userData.password);
+            qrCodeImg.src = qrCode;
+            console.log("qr updated");
+          }, 10000);
+        } catch (error) {
+          console.log('Error get QR code:', error);
+          scanUserQrDiv.style.display = 'none';
+        }
+      }
+
+
+
+
+    </script>
+  
+  </html>

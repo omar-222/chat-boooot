@@ -1,0 +1,651 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+
+    font-family: cairo !important;
+    color: white;
+    font-size: 18px;
+  }
+      textarea, button { padding: 10px; margin: 10px 0; font-size: 16px; width: 100%; }
+      button { background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+      button:hover { background-color: #4571a0; }
+      img { max-width: 100%; height: auto;}
+
+
+      #downloadBtn {
+        padding: 5px 15px;
+        font-weight: bold;
+        margin: 10px 0px;
+        font-size: 16px;
+        background: #226ab2;
+        color: #fff;
+        font-family: cairo;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+
+        border: 2px solid whitesmoke;
+        color: white !important;
+        border-radius: 15px !important;
+      }
+
+      .tools button{
+      max-width: 300px;
+      }
+
+      .WhatsAppSender{
+        padding: 5px 15px;
+        font-weight: bold;
+        font-size: 16px;
+        background: red;
+        color: #fff;
+        font-family: cairo;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        background-image: repeating-linear-gradient(90deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(0deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(0deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 20px), repeating-linear-gradient(90deg, rgba(140, 140, 140, 0.1) 0px, rgba(140, 140, 140, 0.1) 1px, transparent 1px, transparent 20px), linear-gradient(90deg, hsl(208, 100%, 22%), hsl(208, 100%, 22%)) !important;
+        border: 2px solid whitesmoke;
+        color: white !important;
+        border-radius: 15px !important;
+
+      }
+
+
+      .logout-btn{
+        padding: 5px 15px;
+        font-weight: bold;
+        font-size: 16px;
+        color: #fff;
+        font-family: cairo;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        background: black;
+        border: 2px solid whitesmoke;
+        color: white !important;
+        border-radius: 15px !important;
+
+      }
+
+      .dadOFPage{
+        width: 95%;
+        margin: auto;
+        max-width: 1200px;
+      
+      }
+
+
+
+      .mainRules{
+        background-image: repeating-linear-gradient(0deg, rgba(221, 219, 219, 0.2) 0px, rgba(221, 219, 219, 0.2) 1px, transparent 1px, transparent 41px), repeating-linear-gradient(90deg, rgba(221, 219, 219, 0.2) 0px, rgba(221, 219, 219, 0.2) 1px, transparent 1px, transparent 41px), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+        font-size: 20px;
+        max-height: 68vh;
+        font-family: cairo;
+        padding: 10px;
+        /* max-width: 90%; */
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;   
+        margin: 10px 15px;       
+      }
+
+      .qrCodeImg{
+        border: 2px solid black !important;
+      }
+
+      .messageTextareaForSender{
+        background-image: repeating-linear-gradient(0deg, rgba(221, 219, 219, 0.2) 0px, rgba(221, 219, 219, 0.2) 1px, transparent 1px, transparent 41px), repeating-linear-gradient(90deg, rgba(221, 219, 219, 0.2) 0px, rgba(221, 219, 219, 0.2) 1px, transparent 1px, transparent 41px), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+        font-size: 20px;
+        max-height: 53vh;
+        font-family: cairo;
+        padding: 10px;
+        max-width: 90%;
+        /* max-width: 800px; */
+        height: 100%;
+        border-radius: 10px;
+        margin: 10px 30px;
+      }
+
+      #startWhatsAppSender{
+        padding: 5px 15px;
+        font-weight: bold;
+        margin: 10px 0px;
+        font-size: 16px;
+        background: #226ab2;
+        color: #fff;
+        font-family: cairo;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        border: 2px solid whitesmoke;
+        color: white !important;
+        border-radius: 15px !important;
+      }
+
+
+      .saveRulesBtn{
+        padding: 5px 15px;
+        font-weight: bold;
+        margin: 10px auto 20px;
+        font-size: 16px;
+        background: #226ab2;
+        font-family: cairo;
+        cursor: pointer;
+        border: 2px solid whitesmoke;
+        color: white !important;
+        border-radius: 15px !important;
+        max-width: 200px;
+        margin: 12px auto;
+        display: block;
+      }
+
+      div:where(.swal2-container) .swal2-input {
+        height: auto;
+        padding: 10px 10px;
+        margin: 5px;
+      }
+
+
+
+      .mainMessage{
+        width: 95%;
+        margin: 5px auto 20px;
+        padding: 17px;
+        min-height: 200px;
+        border-radius: 15px;
+        font-size: 20px;
+      }
+
+      .circle-progress {
+        width: 100%;
+        height: 100%;
+        max-width: 150px;
+        max-height: 150px;
+      }
+
+  #stopBtn,
+  #startBtn{
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    background: #226ab2;
+    color: #fff;
+    font-family: cairo;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+    color: white !important;
+    border-radius: 15px !important;
+  }
+
+  .setHoursButton{
+    padding: 5px 15px;
+    font-weight: bold; 
+    font-size: 16px; 
+    background: #226ab2; 
+    color: #fff; 
+    font-family: cairo; 
+    border: none; 
+    border-radius: 15px; 
+    cursor: pointer; 
+    border: 2px solid whitesmoke; 
+    color: white !important; 
+    border-radius: 15px !important;       
+  }
+
+
+  #startHourampm, #endHourampm, #startHour, #endHour{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  
+  .passwordInput{
+    width: 80%;
+    margin: auto !important;
+    border: 2px solid #0000003b;
+    border-radius: 10px;
+  }
+
+
+  .phoneNumbersTable td, .phoneNumbersTable tr{
+    padding: 10px;
+    border: 1px solid black !important;
+    color: black !important;
+  }
+
+
+
+  @media (max-width: 600px) {
+    .btnsDiv{
+      display: block !important;
+    }
+  }
+
+
+
+  .loginDiv {
+    font-family: Cairo;
+    background-image: url('./imgs/background2.jpg');
+    background-size: cover;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    background-repeat: no-repeat;
+         
+    height: 100vh;
+    margin: 0;
+
+  }
+
+
+  .loginDiv .containerDad
+  {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; height: 100%;   
+    background-color: rgb(0 0 0 / 75%);
+    font-family: Cairo !important;
+
+  }
+
+
+
+
+
+
+
+      .loginDiv .container {
+          background: rgba(0, 0, 0, 0.412);
+          padding: 20px;
+          border-radius: 10px;
+          text-align: center;
+          color: white;
+          width: 320px;
+      }
+      .loginDiv .login-box,
+      .signup-box {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+      }
+      .loginDiv .logo {
+          width: 70px;
+          margin: 0 auto 10px;
+      }
+      .loginDiv input {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        font-family: Cairo !important;
+        text-align: right;
+        font-size: 17px;
+      }
+      .loginDiv button {
+          padding: 8px;
+          background: #007BFF;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-family: Cairo !important;
+      }
+      .loginDiv button:hover {
+          background: #0056b3;
+      }
+
+
+
+
+
+
+
+
+
+
+      .page {
+        background-color: white;
+        min-height: 100vh;
+      }
+
+      
+/* Start Sidebar */
+  .sidebar {
+    padding: 0px 0 !important;
+    width: 400px;
+    background: #226ab2;
+    color: white;
+    box-shadow: 0 0 10px #ddd;
+    font-size: 15px;
+    font-family: cairo;
+  }
+
+  .sidebar a {
+    text-decoration: none;
+  }
+
+  .sidebar .AdminName {
+    text-align: center;
+  }
+
+  body > div.page.d-flex > div.sidebar.bg-white.p-20.p-relative > div{
+    margin: 10px;
+  }
+  
+  #AdminName{
+    color: #fff !important;
+  }
+  
+  body > div.page.d-flex > div.sidebar.bg-white.p-20.p-relative > div > h2{
+    text-align: center;
+  }
+  
+  body > div.page.d-flex > div.sidebar.bg-white.p-20.p-relative > div > i{
+    display: none;
+  }
+  
+  
+  
+  .sidebar > h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-family: auto;
+    margin-bottom: 50px;
+  }
+  .sidebar > h3::before,
+  .sidebar > h3::after {
+    content: "";
+    background-color: black;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+  }
+  .sidebar > h3::before {
+    width: 80px;
+    height: 2px;
+    bottom: -20px;
+  }
+  .sidebar > h3::after {
+    bottom: -29px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 4px solid white;
+  }
+  .sidebar ul li a {
+    transition: 0.3s;
+    margin-bottom: 5px;
+    background-color: transparent;
+    color: white;
+  }
+
+  .sidebar ul li a.active {
+    background-color: #f6f6f6 !important;
+    color: black !important;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #f6f6f65c !important;
+  }
+  
+  
+
+  
+  
+  
+  /* Main container */
+.settings-container {
+  text-align: end;
+  padding: 20px;
+  font-family: "Cairo", sans-serif;
+  font-weight: bold;
+  /* max-width: 800px; */
+  margin: auto;
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusts based on screen size */
+  gap: 20px;
+  justify-items: center;
+  text-align: center;
+}
+
+/* Input Fields */
+.settings-container .input {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;
+  max-width: 250px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Button Styling */
+.settings-container .button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.settings-container button {
+  max-width: 400px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.settings-container button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Stacks on smaller screens */
+  }
+  
+  .settings-container button {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Main Container */
+.file-upload-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  padding: 15px;
+}
+
+/* Upload Section */
+.file-upload-container .upload-section {
+  text-align: center;
+}
+
+/* Styled Label for Upload */
+.file-upload-container .upload-label {
+  background: green;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Cairo", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Download Button */
+.file-upload-container .download-button {
+  max-width: 400px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover Effects */
+.file-upload-container .download-button:hover {
+  background-color: #2980b9;
+}
+
+.file-upload-container .upload-label:hover {
+  background: darkgreen;
+}
+
+
+
+
+.HiddeLeftParSidebarBtn{
+  display: none;
+}
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .file-upload-container {
+    grid-template-columns: 1fr; /* Stacks elements for small screens */
+    text-align: center;
+  }
+  
+  .file-upload-container .download-button {
+    width: 100%;
+  }
+
+
+  .sidebar{
+    display: none ;
+    height: 100vh;
+    position: fixed !important;
+    right: 0;
+    width: 100%;
+  }
+
+  .sidebar .HiddeLeftParSidebarBtn{
+    
+    font-size: 25px;
+    border-radius: 10px;
+    background: #000000bf;
+    color: white;
+    position: fixed;
+    left: 10px;
+    top: 6px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+  }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.HomePage .container {
+  max-width: 100%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.HomePage h1 {
+  text-align: center;
+  color: #333;
+  font-size: 23px;
+}
+.HomePage canvas {
+  max-width: 100%;
+}
+.HomePage .charts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.HomePage .chart-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 800px;
+  margin: 10px;
+}
+
+
+/* .user-data {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+} */
+.user-data .container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.user-data h1 {
+  text-align: center;
+  color: #333;
+}
+.user-data .info {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fafafa;
+  color: black;
+}
+.user-data .info label {
+  font-weight: bold;
+}

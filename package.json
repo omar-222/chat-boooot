@@ -1,0 +1,33 @@
+{
+  "name": "whatsapp-chatbot-project",
+  "version": "1.0.12",
+  "description": "A WhatsApp chatbot with an admin panel, Express API, and Firebase integration.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "chatbot",
+    "express",
+    "firebase",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "node-fetch": "^2.7.0",
+    "openai": "^4.47.1",
+    "qrcode": "^1.5.3",
+    "rimraf": "^5.0.7",
+    "sqlite3": "^5.1.7",
+    "whatsapp-web.js": "git+https://github.com/omar-222/whatsapp-web.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
