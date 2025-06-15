@@ -8,6 +8,7 @@ const serviceAccount = require('./serviceAccountKey.json');
 const { generateWithAI,getAIContent } = require("./aiService");
 const fetch = require('node-fetch'); // Use node-fetch instead of axios
 
+const puppeteer = require('puppeteer'); // now using full puppeteer
 
 
 
@@ -330,7 +331,7 @@ async function initializeClient(user) {
   const client = new Client({
     authStrategy: new LocalAuth({ dataPath: sessionPath }),
     puppeteer: {
-      executablePath: './node_modules/puppeteer-core/.local-chromium/win64-1045629/chrome-win/chrome.exe',
+      // executablePath: './node_modules/puppeteer-core/.local-chromium/win64-1045629/chrome-win/chrome.exe',
       // executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
       headless: true,
       args: [
